@@ -1,0 +1,74 @@
+{
+    "name": "Actions",
+    "maps": [
+        {
+            "name": "DefaultActions",
+            "id": "76b66f1e-18bd-4d63-aa3c-e60aac1d1542",
+            "actions": [
+                {
+                    "name": "ClickR",
+                    "type": "Button",
+                    "id": "e849ea01-67e7-4ae2-bd64-3910f943732b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Drag",
+                    "type": "Value",
+                    "id": "134f3d22-ddd9-437f-a67d-901927496669",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Scroll",
+                    "type": "Value",
+                    "id": "323d3d5f-443c-43b2-a622-d6164763c962",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "068175c8-c6b4-4cd0-9265-be3b7b14c26d",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClickR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b0672ee-110a-4008-bba6-5fbcf749ff7d",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "029c65ae-3670-4840-b11a-43bcb420d967",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
