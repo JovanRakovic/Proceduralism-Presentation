@@ -56,9 +56,9 @@ public class MeshGenerator : MonoBehaviour
                 float persistance = this.persistance;
                 for(int k = 0; k < depth; k++)
                 {
-                    float roughness = MathF.Pow(this.roughness, k);
+                    float roughness = MathF.Pow(this.roughness, k) * baseRoughness;
 
-                    noise += currentPersistance * Mathf.Pow(Mathf.PerlinNoise((pos.x + noiseOffset.x) * baseRoughness * roughness, (pos.y + noiseOffset.y) * baseRoughness * roughness), power);
+                    noise += Mathf.Pow(currentPersistance * Mathf.PerlinNoise((pos.x + noiseOffset.x) * roughness, (pos.y + noiseOffset.y) * roughness), power);
                     currentPersistance *= persistance;
                 }
                 noise = Mathf.Clamp(noise, minMax.x, minMax.y);
